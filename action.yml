@@ -1,0 +1,9 @@
+name: 'gh-action-proj-mgmt'
+description: 'Move cards around'
+inputs:
+  repo-token:
+    description: 'The GH_TOKEN secret can be passed in using {{ secrets.GH_TOKEN }}'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
